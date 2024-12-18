@@ -1,0 +1,25 @@
+# Node modules (for both frontend and backend)
+node_modules/
+
+# Frontend build files
+frontend/build/
+
+# .env files
+*.env
+
+# Log files
+*.log
+
+# OS generated files (e.g., .DS_Store on macOS)
+.DS_Store
+
+# Ignore the package-lock.json or yarn.lock if using yarn
+package-lock.json
+yarn.lock
+
+# IDE/editor-specific files (e.g., VSCode, JetBrains)
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
