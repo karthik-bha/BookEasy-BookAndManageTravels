@@ -1,12 +1,15 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import logo from "../assets/logo.svg"
 
 const LandingPage = () => {
   return (
     <div className="flex justify-center h-screen ">
-      <div className="flex justify-center text-center m-auto  flex-col p-4">
+      <div className="flex justify-center text-center m-auto  flex-col p-4 items-center">
+      <img src={logo} className="w-[100px] h-auto "/>
         <span className="text-3xl md:text-5xl font-semibold">Weclome to BookEasy</span>
         <div className="my-2">
+     
           <p className="text-3xl">
             A one stop solution for all your travel needs
           </p>
