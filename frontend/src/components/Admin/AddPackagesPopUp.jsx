@@ -40,7 +40,7 @@ const AddPackagesPopUp = ({showPopup, setShowPopup, packageToUpdate, setPkgData}
 
         // Check if the response is successful
           if (postedData.status >= 200 && postedData.status < 300) {
-              window.alert("success, refresh the page");
+              window.alert("Successful Updation");
           // Update the package in the state
           setPkgData((prevData) =>
             prevData.map((item) =>
@@ -56,14 +56,14 @@ const AddPackagesPopUp = ({showPopup, setShowPopup, packageToUpdate, setPkgData}
       } else {
         // If adding a new package, make a POST request
         postedData = await axios.post(
-          "http://localhost:3000/admin/packages/create",
+          "https://bookeasy-backend.onrender.com/admin/packages/create",
           formData,
           { headers: { "Content-Type": "application/json" } }
         );
 
       
         if (postedData.status >= 200 && postedData.status < 300) {
-         window.alert("creation success");
+         window.alert("Creation success");
           setPkgData((prevData) => [...prevData, postedData.data]);
           setShowPopup(false); 
         } else {
