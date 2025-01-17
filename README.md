@@ -21,33 +21,33 @@ Currently, BookEasy is in its early stages of development, with future improveme
 
 ## Setup Instructions
 
-    To set up the project locally, follow these instructions.
+  To set up the project locally, follow these instructions.
 
-    ### 1. Clone the Repository
+  ### 1. Clone the Repository
 
-        ```bash
+  ```bash
         git clone <repository-url>
         cd BookEasy
-        ```
+  ```
 
 ### 2. Install Dependencies
 
 #### Frontend Setup (React + Vite)
 
-        1. Navigate to the `frontend` directory:
+  1. Navigate to the `frontend` directory:
 
-        ```bash
+```bash
         cd frontend
-        ```
+ ```
 
-        2. Install the necessary dependencies:
+  2. Install the necessary dependencies:
 
         ```bash
         npm install
         npm install react-router-dom
         ```
 
-        3. Run the development server:
+  3. Run the development server:
 
         ```bash
         npm run dev
@@ -55,27 +55,27 @@ Currently, BookEasy is in its early stages of development, with future improveme
 
 #### Backend Setup (Node.js + Express + MongoDB)
 
-    1. Navigate to the `backend` directory:
+  1. Navigate to the `backend` directory:
 
-    ```bash
+  ```bash
     cd backend
-    ```
+  ```
 
-    2. Install the required dependencies:
+  2. Install the required dependencies:
 
-    ```bash
+  ```bash
     npm install express mongodb mongoose
-    ```
+  ```
 
-    3. Set up the MongoDB connection string by creating a `.env` file in the `backend` folder:
+  3. Set up the MongoDB connection string by creating a `.env` file in the `backend` folder:
 
-    ```bash
+  ```bash
     MONGO_URL=mongodb://your-database-connection-string
-    ```
+  ```
 
-    4. Run the backend server:
+  4. Run the backend server:
 
-    ```bash
+  ```bash
     node --watch server.js
    ```
 
